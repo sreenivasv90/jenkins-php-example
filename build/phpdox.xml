@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpdox xmlns="http://xml.phpdox.net/config">
+    <project name="dev_yatradis2_com" source="../module" workdir="phpdox">
+        <collector publiconly="false">
+            <include mask="*.php" />
+            <exclude mask="*autoload.php" />
+        </collector>
+
+        <generator output=".">
+            <enrich base="logs">
+                <source type="build">
+                    <coverage path="logs"/>
+                </source>
+                <source type="git">
+                    <coverage path="logs"/>
+                </source>
+                <source type="phploc">
+                    <coverage path="logs"/>
+                </source>
+                <source type="checkstyle">
+                    <coverage path="logs"/>
+                </source>
+                <source type="pmd">
+                    <coverage path="logs"/>
+                </source>
+            </enrich>
+            <build engine="html" enabled="true" output="api">
+                <file extension="html" />
+            </build>
+        </generator>
+    </project>
+</phpdox>
