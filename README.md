@@ -8,5 +8,5 @@
     /usr/bin/php7.3 vendor/bin/phpmd src/ xml phpmd.xml --reportfile build/logs/pmd.xml
     /usr/bin/php7.3 tools/phpcs --report=checkstyle --standard=phpcs.xml --report-file=build/logs/checkstyle.xml --extensions=php src/
     /usr/bin/php7.3 tools/phpcpd --log-pmd build/logs/pmd-cpd.xml --names-exclude "*Test.php" src/
-    /usr/bin/phpdbg7.3 phpdbg -qrr tools/phpunit -c phpunit.xml
+    /usr/bin/phpdbg7.3 -qrr tools/phpunit -c phpunit.xml
     /usr/bin/php7.3 tools/phpdox -f phpdox.xml
