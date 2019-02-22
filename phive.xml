@@ -5,4 +5,5 @@
   <phar name="phploc" version="^4.0.1" installed="4.0.1" location="./tools/phploc" copy="false"/>
   <phar name="phpcpd" version="^4.1.0" installed="4.1.0" location="./tools/phpcpd" copy="false"/>
   <phar name="phpdox" version="^0.11.2" installed="0.11.2" location="./tools/phpdox" copy="false"/>
+  <phar name="composer/composer" version="^1.8.4" installed="1.8.4" location="./tools/composer" copy="false"/>
 </phive>
