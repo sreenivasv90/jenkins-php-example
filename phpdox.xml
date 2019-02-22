@@ -6,9 +6,8 @@
             <exclude mask="*autoload.php" />
         </collector>
 
-        <generator output="build/api/">
-            <enrich base="build/logs/">
-
+        <generator output=".">
+            <enrich base=".">
                 <!-- @base - (Base-)Directory of datafiles used for enrich process -->
 
                 <!--<source type="...">-->
@@ -31,7 +30,7 @@
                 -->
                 <source type="git">
                     <git binary="/usr/bin/git" />
-                    <history enabled="true" limit="15" cache="${phpDox.project.workdir}/gitlog.xml" />
+                    <history enabled="true" limit="15" cache="build/api/xml/gitlog.xml" />
                 </source>
 
                 <!-- add phploc output -->
@@ -39,7 +38,7 @@
                 <source type="phploc" />
                 -->
                 <source type="phploc">
-                    <file name="phploc.xml" />
+                    <file name="build/logs/phploc.xml" />
                 </source>
 
 
@@ -50,7 +49,7 @@
                 </source>
                 -->
                 <source type="checkstyle">
-                    <file name="checkstyle.xml" />
+                    <file name="build/logs/checkstyle.xml" />
                 </source>
 
                 <!-- PHPMessDetector -->
@@ -60,7 +59,7 @@
                 </source>
                 -->
                 <source type="pmd">
-                    <file name="pmd.xml" />
+                    <file name="build/logs/pmd.xml" />
                 </source>
 
                 <!-- PHPUnit Coverage XML -->
@@ -74,11 +73,11 @@
                 </source>
                 -->
                 <source type="phpunit">
-                    <filter directory="${phpDox.project.source}" />
+                    <filter directory="build/coverage/xml/" />
                 </source>
 
             </enrich>
-            <build engine="html" enabled="true" output="html">
+            <build engine="html" enabled="true" output="build/api/html/">
                 <file extension="html" />
             </build>
         </generator>
