@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/maik/projects/jenkins-php-example/src">
+  <namespace name="Example">
+    <class name="Application" src="Application.php" xml="classes/Example_Application.xml"/>
+  </namespace>
+</index>

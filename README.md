@@ -7,6 +7,5 @@
     phpmd src/ xml build/phpmd.xml --reportfile build/logs/pmd.xml
     tools/phpcs --report=checkstyle --standard=phpcs.xml --report-file=build/logs/checkstyle.xml --extensions=php src/
     tools/phpcpd --log-pmd build/logs/pmd-cpd.xml --names-exclude "*Test.php" src/
-
     phpdbg -qrr tools/phpunit -c phpunit.xml
-    phpdox
+    tools/phpdox -f build/phpdox.xml

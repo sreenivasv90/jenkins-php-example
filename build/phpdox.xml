@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpdox xmlns="http://xml.phpdox.net/config">
-    <project name="dev_yatradis2_com" source="../module" workdir="phpdox">
+    <project name="example" source="src/" workdir="phpdox">
         <collector publiconly="false">
             <include mask="*.php" />
             <exclude mask="*autoload.php" />
         </collector>
 
         <generator output=".">
-            <enrich base="logs">
+            <enrich base="build/logs">
                 <source type="build">
                     <coverage path="logs"/>
                 </source>
@@ -24,7 +24,7 @@
                     <coverage path="logs"/>
                 </source>
             </enrich>
-            <build engine="html" enabled="true" output="api">
+            <build engine="html" enabled="true" output="build/phpdox/">
                 <file extension="html" />
             </build>
         </generator>
