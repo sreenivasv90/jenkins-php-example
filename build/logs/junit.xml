@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites>
-  <testsuite name="test" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.001384">
-    <testsuite name="Example\Test\ApplicationTest" file="/home/cwan/projects/jenkins-php-example/test/ApplicationTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.001384">
-      <testcase name="testWillOutputHelloWorld" class="Example\Test\ApplicationTest" classname="Example.Test.ApplicationTest" file="/home/cwan/projects/jenkins-php-example/test/ApplicationTest.php" line="19" assertions="1" time="0.001384"/>
-    </testsuite>
-  </testsuite>
-</testsuites>
