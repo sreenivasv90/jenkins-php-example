@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Example\Application" namespace="Example" name="Application" abstract="false" final="false" start="7" end="13">
-  <file path="src" file="Application.php" realpath="/home/maik/projects/jenkins-php-example/src/Application.php" size="148" time="2019-02-22T21:13:11+00:00" unixtime="1550869991" sha1="02001c9fd4fdb8d31ba705d44d1b6ec3c79a0dc6" relative="Application.php"/>
-  <method name="run" start="9" end="12" abstract="false" final="false" static="false" visibility="public">
-    <return type="void" nullable="false"/>
-  </method>
-</class>
